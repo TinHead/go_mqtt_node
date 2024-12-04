@@ -1,4 +1,4 @@
-module github.com/tinhead/go-mqtt-node
+module github.com/tinhead/go_mqtt_node
 
 go 1.23.0
 
