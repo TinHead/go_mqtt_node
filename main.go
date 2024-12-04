@@ -96,7 +96,7 @@ func presentNode(client mqtt.Client, cfg *Cfg, statetopic string, cmdtopic strin
 	log.Println("Presenting myself ...")
 	msg := presentPayload{
 		Name:          cfg.NodeName,
-		DeviceClass:   "switch",
+		DeviceClass:   cfg.NodeType,
 		StateTopic:    statetopic,
 		CommandTopic:  cmdtopic,
 		UniqueId:      cfg.NodeId,
